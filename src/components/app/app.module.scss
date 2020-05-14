@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 300;
+  src: url('../../fonts/gotham/gotham-pro-light.woff2') format('woff2'),
+    url('../../fonts/gotham/gotham-pro-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 400;
+  src: url('../../fonts/gotham/gotham-pro.woff2') format('woff2'),
+    url('../../fonts/gotham/gotham-pro.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 500;
+  src: url('../../fonts/gotham/gotham-pro-medium.woff2') format('woff2'),
+    url('../../fonts/gotham/gotham-pro-medium.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url('../../fonts/lato/lato-regular.woff2') format('woff2'),
+    url('../../fonts/lato/lato-regular.woff') format('woff');
+}
+
+.App {
+  display: flex;
+  flex-flow: column wrap;
+}
+

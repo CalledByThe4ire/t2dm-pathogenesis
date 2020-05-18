@@ -1,0 +1,47 @@
+@keyframes increase-middle-radius {
+  from { r: 39.75; }
+  to { r: 16.5; }
+}
+@keyframes increase-inner-radius {
+  from { r: 16.5; }
+  to { r: 39.75; }
+}
+
+.AlarmIcon {
+  display: flex;
+  flex-flow: row wrap;
+
+  &Circle {
+    &Outer,
+    &Middle,
+    &Inner {
+      fill: #f78b1f;
+    }
+
+    &Outer,
+    &Middle {
+      fill-opacity: 0.22;
+      stroke-linecap: round;
+      stroke-width: 2px;
+    }
+
+    &Outer {
+      stroke: url(#linear-gradient);
+    }
+
+    &Middle {
+      stroke: url(#linear-gradient-2);
+      filter: url(#filter);
+      animation: increase-middle-radius 1s;
+      animation-iteration-count: infinite;
+    }
+
+    &Inner {
+      opacity: 0.62;
+      filter: url(#filter-2);
+      animation: increase-inner-radius 1s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+

@@ -1,0 +1,116 @@
+.Question {
+  position: relative;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  background-image: url('./assets/rock.jpg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url('./assets/rock@2x.jpg');
+  }
+
+  &Header {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    padding-left: 70px;
+    padding-top: 135px;
+
+
+    font-size: 50px;
+    line-height: 1.2;
+    color: #0d319c;
+    font-weight: 400;
+  }
+
+  &List {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &Item {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &:nth-child(1) {
+      top: 395px;
+      left: 220px;
+
+      flex-flow: column wrap;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      & svg {
+        flex-grow: 1;
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &:nth-child(2) {
+      top: 260px;
+      left: 560px;
+
+      align-items: center;
+
+      p {
+        order: 1;
+        margin-left: 10px;
+      }
+
+      & svg {
+        width: 53px;
+        height: 53px;
+      }
+    }
+
+    &:nth-child(3) {
+      top: 505px;
+      left: 370px;
+
+      flex-flow: column wrap;
+      align-items: center;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      & svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 80px;
+      }
+    }
+
+    &:nth-child(4) {
+      top: 485px;
+      left: 790px;
+
+      flex-flow: column wrap;
+      align-items: center;
+
+      & p {
+        margin-bottom: 10px;
+      }
+
+      & svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

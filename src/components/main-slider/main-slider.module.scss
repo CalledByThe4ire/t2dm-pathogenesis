@@ -1,0 +1,33 @@
+.MainSlider {
+  display: flex;
+  flex-flow: row wrap;
+  width: inherit;
+  height: inherit;
+
+  &ViewPort {
+    position: relative;
+
+    width: inherit;
+    height: inherit;
+
+    overflow: hidden;
+    user-select: none;
+  }
+
+  &Wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    width: inherit;
+    height: inherit;
+
+    transition: all 1s;
+  }
+
+  &Invisible {
+    display: none !important;
+  }
+}

@@ -1,0 +1,32 @@
+.Answer {
+  display: flex;
+  flex-flow: row wrap;
+
+  background-image: url('./assets/rock.jpg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url('./assets/rock@2x.jpg');
+  }
+
+  &Header {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 245px;
+
+
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+  }
+}

@@ -29,5 +29,20 @@
 .App {
   display: flex;
   flex-flow: column wrap;
-}
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 1024px;
+  height: 768px;
+
+  transform: translate(-50%, -50%);
+
+  &::before {
+    content: 'для тестирования в браузере Chrome в режиме совместимости с iPad (только 1024x768)';
+    position: absolute;
+    top: -15px;
+    right: 0;
+  }
+}
